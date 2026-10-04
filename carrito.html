@@ -1,0 +1,273 @@
+<!DOCTYPE html> <html lang="es"> <head> <meta charset="UTF-8">
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0"
+<title>CARRITO — JHONYSBLACK</title> <link rel="stylesheet" href="style.css" > </head> <body> <!-- ===================================================== HEADER ===================================================== --> <header>
+<a
+  href="index.html"
+  class="logo"
+>
+  JHONYSBLACK
+</a>
+
+
+<nav>
+
+  <a href="index.html">
+    HOME
+  </a>
+
+  <a href="shop.html">
+    SHOP
+  </a>
+
+  <a href="gorras.html">
+    GORRAS
+  </a>
+
+  <a href="ropa.html">
+    ROPA
+  </a>
+
+
+  <!-- ================= ARTÍCULOS ================= -->
+
+  <div class="dropdown">
+
+    <button
+      class="dropdown-toggle"
+      type="button"
+    >
+      ARTÍCULOS ▾
+    </button>
+
+
+    <div class="dropdown-content">
+
+      <a href="gafas.html">
+        GAFAS
+      </a>
+
+      <a href="llaveros.html">
+        LLAVEROS
+      </a>
+
+      <a href="gorros.html">
+        GORROS
+      </a>
+
+      <a href="shop.html">
+        TODOS
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <a href="registro.html">
+    REGISTRO
+  </a>
+
+  <a href="login.html">
+    LOGIN
+  </a>
+
+
+  <!-- ================= CARRITO ================= -->
+
+  <a
+    href="carrito.html"
+    class="cart-icon"
+    aria-label="Carrito"
+  >
+
+    🛒
+
+    <span class="cart-count">
+      0
+    </span>
+
+  </a>
+
+</nav>
+
+</header> <!-- ===================================================== CABECERA ===================================================== --> <section class="page-header">
+<div>
+
+  <h1>
+    CARRITO
+  </h1>
+
+  <p>
+    YOUR JHONYSBLACK SELECTION
+  </p>
+
+</div>
+
+</section> <!-- ===================================================== CONTENIDO DEL CARRITO ===================================================== --> <main class="cart-page">
+<div class="cart-page-content">
+
+
+  <!-- =================================================
+       PRODUCTOS
+       ================================================= -->
+
+  <section class="cart-products">
+
+
+    <div class="cart-page-title">
+
+      <h2>
+        TU CARRITO
+      </h2>
+
+      <span id="cart-page-count">
+        0 PRODUCTOS
+      </span>
+
+    </div>
+
+
+    <!--
+      JavaScript colocará aquí
+      todos los productos.
+    -->
+
+    <div id="cart-page-items"></div>
+
+
+    <!-- =================================================
+         CARRITO VACÍO
+         ================================================= -->
+
+    <div
+      id="empty-cart"
+      class="empty-cart"
+      style="display: none;"
+    >
+
+      <h3>
+        TU CARRITO ESTÁ VACÍO
+      </h3>
+
+
+      <p>
+        Descubre nuestra colección y encuentra
+        tu próximo Essential.
+      </p>
+
+
+      <a
+        href="shop.html"
+        class="btn"
+      >
+        IR A SHOP
+      </a>
+
+    </div>
+
+
+  </section>
+
+
+
+  <!-- =================================================
+       RESUMEN DEL PEDIDO
+       ================================================= -->
+
+  <aside class="cart-summary">
+
+
+    <h2>
+      RESUMEN
+    </h2>
+
+
+    <!-- PRODUCTOS -->
+
+    <div class="summary-line">
+
+      <span>
+        PRODUCTOS
+      </span>
+
+      <span id="summary-subtotal">
+        0,00€
+      </span>
+
+    </div>
+
+
+    <!-- ENVÍO -->
+
+    <div class="summary-line">
+
+      <span>
+        ENVÍO
+      </span>
+
+      <span id="summary-shipping">
+        0,00€
+      </span>
+
+    </div>
+
+
+    <!-- INFORMACIÓN ENVÍO GRATIS -->
+
+    <div
+      class="shipping-notice"
+      id="shipping-notice"
+    >
+      Envío gratis a partir de 60€
+    </div>
+
+
+    <div class="summary-divider"></div>
+
+
+    <!-- TOTAL -->
+
+    <div class="summary-total">
+
+      <span>
+        TOTAL
+      </span>
+
+      <span id="summary-total">
+        0,00€
+      </span>
+
+    </div>
+
+
+    <!-- CHECKOUT -->
+
+    <button
+      class="btn checkout-btn"
+      onclick="checkout()"
+    >
+      FINALIZAR COMPRA
+    </button>
+
+
+    <!-- CONTINUAR -->
+
+    <a
+      href="shop.html"
+      class="continue-shopping"
+    >
+      ← CONTINUAR COMPRANDO
+    </a>
+
+
+  </aside>
+
+
+</div>
+
+</main> <!-- ===================================================== FOOTER ===================================================== --> <footer>
+© 2026 JHONYSBLACK — ALL BLACK EVERYTHING
+
+</footer> <!-- ===================================================== JAVASCRIPT ===================================================== --> <script src="main.js"></script> <!-- ===================================================== DROPDOWN ===================================================== --> <script> document.addEventListener( "DOMContentLoaded", function () { const dropdown = document.querySelector(".dropdown"); const toggle = document.querySelector(".dropdown-toggle"); if (!dropdown || !toggle) { return; } toggle.addEventListener( "click", function (event) { event.preventDefault(); event.stopPropagation(); dropdown.classList.toggle("active"); } ); document.addEventListener( "click", function (event) { if ( !dropdown.contains(event.target) ) { dropdown.classList.remove( "active" ); } } ); } ); </script> </body> </html>

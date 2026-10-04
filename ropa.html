@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ROPA — JHONYSBLACK</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+
+  <header>
+
+    <a href="index.html" class="logo">
+      JHONYSBLACK
+    </a>
+
+    <nav>
+
+      <a href="index.html">HOME</a>
+
+      <a href="shop.html">SHOP</a>
+
+      <a href="gorras.html">GORRAS</a>
+
+      <a href="ropa.html">ROPA</a>
+
+      <!-- ================= ARTÍCULOS ================= -->
+
+      <div class="dropdown">
+
+        <button
+          class="dropdown-toggle"
+          type="button"
+        >
+          ARTÍCULOS ▾
+        </button>
+
+        <div class="dropdown-content">
+
+          <a href="gafas.html">GAFAS</a>
+
+          <a href="llaveros.html">LLAVEROS</a>
+
+          <a href="gorros.html">GORROS</a>
+
+          <a href="shop.html">TODOS</a>
+
+        </div>
+
+      </div>
+
+      <a href="registro.html">REGISTRO</a>
+
+      <a href="login.html">LOGIN</a>
+
+      <!-- ================= CARRITO ================= -->
+
+      <div
+        class="cart-icon"
+        onclick="toggleCart()"
+        role="button"
+        tabindex="0"
+        aria-label="Abrir carrito"
+      >
+
+        🛒
+
+        <span class="cart-count">0</span>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+
+  <!-- ================= CABECERA ================= -->
+
+  <section class="page-header">
+
+    <div>
+
+      <h1>ROPA</h1>
+
+      <p>
+        JHONYSBLACK CLOTHING COLLECTION
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= PRODUCTOS ================= -->
+
+  <main class="products-section">
+
+    <div class="products-header">
+
+      <div>
+
+        <h2>CLOTHING</h2>
+
+        <p>
+          MINIMAL • MODERN • ESSENTIAL
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="product-grid">
+
+
+      <!-- =================================================
+           PRODUCTO 1
+           BLACK ESSENTIAL
+           ================================================= -->
+
+      <article class="product-card">
+
+        <div class="product-image">
+
+          <img
+            src="IMG_7834.jpeg"
+            alt="JHONYSBLACK Black Essential"
+          >
+
+        </div>
+
+        <div class="product-info">
+
+          <div class="product-category">
+            Ropa
+          </div>
+
+          <h3>
+            BLACK ESSENTIAL
+          </h3>
+
+          <div class="product-price">
+            45.00€
+          </div>
+
+          <button
+            type="button"
+            class="product-add"
+            onclick="addToCart('BLACK ESSENTIAL', 45, 'IMG_7834.jpeg')"
+          >
+            AÑADIR AL CARRITO
+          </button>
+
+        </div>
+
+      </article>
+
+
+      <!-- =================================================
+           PRODUCTO 2
+           BLACK STREET
+           ================================================= -->
+
+      <article class="product-card">
+
+        <div class="product-image">
+
+          <img
+            src="Photoroom_20241209_020439.jpeg"
+            alt="JHONYSBLACK Black Street"
+          >
+
+        </div>
+
+        <div class="product-info">
+
+          <div class="product-category">
+            Ropa
+          </div>
+
+          <h3>
+            BLACK STREET
+          </h3>
+
+          <div class="product-price">
+            50.00€
+          </div>
+
+          <button
+            type="button"
+            class="product-add"
+            onclick="addToCart('BLACK STREET', 50, 'Photoroom_20241209_020439.jpeg')"
+          >
+            AÑADIR AL CARRITO
+          </button>
+
+        </div>
+
+      </article>
+
+
+      <!-- =================================================
+           PRODUCTO 3
+           BLACK SIGNATURE
+           ================================================= -->
+
+      <article class="product-card">
+
+        <div class="product-image">
+
+          <img
+            src="Photoroom_20241209_020349.jpeg"
+            alt="JHONYSBLACK Signature"
+          >
+
+        </div>
+
+        <div class="product-info">
+
+          <div class="product-category">
+            Ropa
+          </div>
+
+          <h3>
+            BLACK SIGNATURE
+          </h3>
+
+          <div class="product-price">
+            55.00€
+          </div>
+
+          <button
+            type="button"
+            class="product-add"
+            onclick="addToCart('BLACK SIGNATURE', 55, 'Photoroom_20241209_020349.jpeg')"
+          >
+            AÑADIR AL CARRITO
+          </button>
+
+        </div>
+
+      </article>
+
+
+      <!-- =================================================
+           PRODUCTO 4
+           BLACK COLLECTION
+           ================================================= -->
+
+      <article class="product-card">
+
+        <div class="product-image">
+
+          <img
+            src="IMG_0706.jpeg"
+            alt="JHONYSBLACK Black Collection"
+          >
+
+        </div>
+
+        <div class="product-info">
+
+          <div class="product-category">
+            Ropa
+          </div>
+
+          <h3>
+            BLACK COLLECTION
+          </h3>
+
+          <div class="product-price">
+            60.00€
+          </div>
+
+          <button
+            type="button"
+            class="product-add"
+            onclick="addToCart('BLACK COLLECTION', 60, 'IMG_0706.jpeg')"
+          >
+            AÑADIR AL CARRITO
+          </button>
+
+        </div>
+
+      </article>
+
+
+      <!-- =================================================
+           PRODUCTO 5
+           BLACK EDITION
+           ================================================= -->
+
+      <article class="product-card">
+
+        <div class="product-image">
+
+          <img
+            src="IMG_8955.jpeg"
+            alt="JHONYSBLACK Black Edition"
+          >
+
+        </div>
+
+        <div class="product-info">
+
+          <div class="product-category">
+            Ropa
+          </div>
+
+          <h3>
+            BLACK EDITION
+          </h3>
+
+          <div class="product-price">
+            55.00€
+          </div>
+
+          <button
+            type="button"
+            class="product-add"
+            onclick="addToCart('BLACK EDITION', 55, 'IMG_8955.jpeg')"
+          >
+            AÑADIR AL CARRITO
+          </button>
+
+        </div>
+
+      </article>
+
+
+      <!-- =================================================
+           PRODUCTO 6
+           URBAN BLACK
+           ================================================= -->
+
+      <article class="product-card">
+
+        <div class="product-image">
+
+          <img
+            src="IMG_9198.jpeg"
+            alt="JHONYSBLACK Urban"
+          >
+
+        </div>
+
+        <div class="product-info">
+
+          <div class="product-category">
+            Ropa
+          </div>
+
+          <h3>
+            URBAN BLACK
+          </h3>
+
+          <div class="product-price">
+            50.00€
+          </div>
+
+          <button
+            type="button"
+            class="product-add"
+            onclick="addToCart('URBAN BLACK', 50, 'IMG_9198.jpeg')"
+          >
+            AÑADIR AL CARRITO
+          </button>
+
+        </div>
+
+      </article>
+
+
+    </div>
+
+  </main>
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer>
+
+    © 2026 JHONYSBLACK — ALL BLACK EVERYTHING
+
+  </footer>
+
+
+  <!-- =================================================
+       CARRITO LATERAL
+       ================================================= -->
+
+  <div
+    class="cart-panel"
+    id="cartPanel"
+  >
+
+    <div class="cart-header">
+
+      <h2>
+        MI CARRITO
+      </h2>
+
+      <button
+        type="button"
+        class="cart-close"
+        onclick="toggleCart()"
+        aria-label="Cerrar carrito"
+      >
+        ×
+      </button>
+
+    </div>
+
+
+    <div id="cart-items"></div>
+
+
+    <div class="cart-footer">
+
+      <div class="cart-total">
+
+        <span>
+          TOTAL
+        </span>
+
+        <span id="cart-total">
+          0€
+        </span>
+
+      </div>
+
+
+      <a
+        href="carrito.html"
+        class="btn"
+      >
+        VER CARRITO
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- ================= JAVASCRIPT ================= -->
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>

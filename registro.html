@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>REGISTRO — JHONYSBLACK</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+
+  <header>
+
+    <a href="index.html" class="logo">
+      JHONYSBLACK
+    </a>
+
+    <nav>
+
+      <a href="index.html">HOME</a>
+      <a href="shop.html">SHOP</a>
+      <a href="gorras.html">GORRAS</a>
+      <a href="ropa.html">ROPA</a>
+
+      <div class="dropdown">
+
+  <button class="dropdown-toggle" type="button">
+    ARTÍCULOS ▾
+  </button>
+
+  <div class="dropdown-content">
+
+    <a href="gafas.html">GAFAS</a>
+    <a href="llaveros.html">LLAVEROS</a>
+    <a href="gorros.html">GORROS</a>
+    <a href="shop.html">TODOS</a>
+
+  </div>
+
+</div>
+
+
+      <a href="registro.html">REGISTRO</a>
+      <a href="login.html">LOGIN</a>
+
+      <a href="carrito.html" class="cart-icon">
+        🛒
+        <span class="cart-count">0</span>
+      </a>
+
+    </nav>
+
+  </header>
+
+
+  <!-- ================= REGISTRO ================= -->
+
+  <main class="auth-page">
+
+    <section class="auth-box">
+
+      <div class="auth-header">
+
+        <p class="auth-label">
+          JHONYSBLACK
+        </p>
+
+        <h1>
+          CREAR CUENTA
+        </h1>
+
+        <p>
+          ÚNETE A LA BLACK COMMUNITY
+        </p>
+
+      </div>
+
+
+      <form id="registerForm">
+
+
+        <!-- NOMBRE -->
+
+        <div class="form-group">
+
+          <label for="registerName">
+            NOMBRE
+          </label>
+
+          <input
+            type="text"
+            id="registerName"
+            name="name"
+            placeholder="Tu nombre"
+            required
+          >
+
+        </div>
+
+
+        <!-- EMAIL -->
+
+        <div class="form-group">
+
+          <label for="registerEmail">
+            EMAIL
+          </label>
+
+          <input
+            type="email"
+            id="registerEmail"
+            name="email"
+            placeholder="tu@email.com"
+            required
+          >
+
+        </div>
+
+
+        <!-- CONTRASEÑA -->
+
+        <div class="form-group">
+
+          <label for="registerPassword">
+            CONTRASEÑA
+          </label>
+
+          <input
+            type="password"
+            id="registerPassword"
+            name="password"
+            placeholder="••••••••"
+            minlength="6"
+            required
+          >
+
+        </div>
+
+
+        <!-- REPETIR CONTRASEÑA -->
+
+        <div class="form-group">
+
+          <label for="registerPasswordConfirm">
+            REPETIR CONTRASEÑA
+          </label>
+
+          <input
+            type="password"
+            id="registerPasswordConfirm"
+            name="passwordConfirm"
+            placeholder="••••••••"
+            minlength="6"
+            required
+          >
+
+        </div>
+
+
+        <!-- CONDICIONES -->
+
+        <label class="checkbox-group">
+
+          <input
+            type="checkbox"
+            id="terms"
+            required
+          >
+
+          <span>
+            Acepto los términos y condiciones de la tienda.
+          </span>
+
+        </label>
+
+
+        <!-- BOTÓN -->
+
+        <button
+          type="submit"
+          class="btn auth-button"
+        >
+          CREAR CUENTA
+        </button>
+
+
+        <!-- MENSAJE -->
+
+        <p
+          id="registerMessage"
+          class="auth-message"
+        ></p>
+
+
+      </form>
+
+
+      <div class="auth-footer">
+
+        <p>
+          ¿YA TIENES UNA CUENTA?
+        </p>
+
+        <a href="login.html">
+          INICIAR SESIÓN
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer>
+
+    © 2026 JHONYSBLACK — ALL BLACK EVERYTHING
+
+  </footer>
+
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>

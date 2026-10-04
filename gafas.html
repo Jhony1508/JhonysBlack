@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>GAFAS — JHONYSBLACK</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+
+  <header>
+
+    <a href="index.html" class="logo">
+      JHONYSBLACK
+    </a>
+
+    <nav>
+
+      <a href="index.html">
+        HOME
+      </a>
+
+      <a href="shop.html">
+        SHOP
+      </a>
+
+      <a href="gorras.html">
+        GORRAS
+      </a>
+
+      <a href="ropa.html">
+        ROPA
+      </a>
+
+
+      <!-- ================= ARTÍCULOS ================= -->
+
+      <div class="dropdown">
+
+        <button
+          class="dropdown-toggle"
+          type="button"
+        >
+          ARTÍCULOS ▾
+        </button>
+
+        <div class="dropdown-content">
+
+          <a href="gafas.html">
+            GAFAS
+          </a>
+
+          <a href="llaveros.html">
+            LLAVEROS
+          </a>
+
+          <a href="gorros.html">
+            GORROS
+          </a>
+
+          <a href="shop.html">
+            TODOS
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <a href="registro.html">
+        REGISTRO
+      </a>
+
+      <a href="login.html">
+        LOGIN
+      </a>
+
+
+      <!-- ================= CARRITO ================= -->
+
+      <div
+        class="cart-icon"
+        onclick="toggleCart()"
+        role="button"
+        tabindex="0"
+        aria-label="Abrir carrito"
+      >
+
+        🛒
+
+        <span class="cart-count">
+          0
+        </span>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+
+  <!-- ================= CABECERA ================= -->
+
+  <section class="page-header">
+
+    <div>
+
+      <h1>
+        GAFAS
+      </h1>
+
+      <p>
+        JHONYSBLACK EYEWEAR COLLECTION
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= PRODUCTOS ================= -->
+
+  <main class="products-section">
+
+    <div class="products-header">
+
+      <div>
+
+        <h2>
+          EYEWEAR
+        </h2>
+
+        <p>
+          SHARP • DARK • ESSENTIAL
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="product-grid">
+
+
+      <!-- =================================================
+           GAFAS 1
+           BLACK ONE
+           ================================================= -->
+
+      <article class="product-card">
+
+        <div class="product-image">
+
+          <img
+            src="IMG_1734.png"
+            alt="Gafas JHONYSBLACK Black One"
+          >
+
+        </div>
+
+        <div class="product-info">
+
+          <div class="product-category">
+            Gafas
+          </div>
+
+          <h3>
+            BLACK ONE
+          </h3>
+
+          <div class="product-price">
+            30.00€
+          </div>
+
+          <button
+            type="button"
+            class="product-add"
+            onclick="addToCart('GAFAS BLACK ONE', 30, 'IMG_1734.png')"
+          >
+            AÑADIR AL CARRITO
+          </button>
+
+        </div>
+
+      </article>
+
+
+      <!-- =================================================
+           GAFAS 2
+           SHADOW
+           ================================================= -->
+
+      <article class="product-card">
+
+        <div class="product-image">
+
+          <img
+            src="IMG_1735.jpeg"
+            alt="Gafas JHONYSBLACK Shadow"
+          >
+
+        </div>
+
+        <div class="product-info">
+
+          <div class="product-category">
+            Gafas
+          </div>
+
+          <h3>
+            SHADOW
+          </h3>
+
+          <div class="product-price">
+            35.00€
+          </div>
+
+          <button
+            type="button"
+            class="product-add"
+            onclick="addToCart('GAFAS SHADOW', 35, 'IMG_1735.jpeg')"
+          >
+            AÑADIR AL CARRITO
+          </button>
+
+        </div>
+
+      </article>
+
+
+      <!-- =================================================
+           GAFAS 3
+           NOIR
+           ================================================= -->
+
+      <article class="product-card">
+
+        <div class="product-image">
+
+          <img
+            src="P01170850_b1.jpg.avif"
+            alt="Gafas JHONYSBLACK Noir"
+          >
+
+        </div>
+
+        <div class="product-info">
+
+          <div class="product-category">
+            Gafas
+          </div>
+
+          <h3>
+            NOIR
+          </h3>
+
+          <div class="product-price">
+            35.00€
+          </div>
+
+          <button
+            type="button"
+            class="product-add"
+            onclick="addToCart('GAFAS NOIR', 35, 'P01170850_b1.jpg.avif')"
+          >
+            AÑADIR AL CARRITO
+          </button>
+
+        </div>
+
+      </article>
+
+
+      <!-- =================================================
+           GAFAS 4
+           BLACK FRAME
+           ================================================= -->
+
+      <article class="product-card">
+
+        <div class="product-image">
+
+          <img
+            src="92044-TS-00_02model2.jpg"
+            alt="Gafas JHONYSBLACK Black Frame"
+          >
+
+        </div>
+
+        <div class="product-info">
+
+          <div class="product-category">
+            Gafas
+          </div>
+
+          <h3>
+            BLACK FRAME
+          </h3>
+
+          <div class="product-price">
+            40.00€
+          </div>
+
+          <button
+            type="button"
+            class="product-add"
+            onclick="addToCart('GAFAS BLACK FRAME', 40, '92044-TS-00_02model2.jpg')"
+          >
+            AÑADIR AL CARRITO
+          </button>
+
+        </div>
+
+      </article>
+
+
+    </div>
+
+  </main>
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer>
+
+    © 2026 JHONYSBLACK — ALL BLACK EVERYTHING
+
+  </footer>
+
+
+  <!-- =================================================
+       CARRITO LATERAL
+       ================================================= -->
+
+  <div
+    class="cart-panel"
+    id="cartPanel"
+  >
+
+    <div class="cart-header">
+
+      <h2>
+        MI CARRITO
+      </h2>
+
+      <button
+        type="button"
+        class="cart-close"
+        onclick="toggleCart()"
+        aria-label="Cerrar carrito"
+      >
+        ×
+      </button>
+
+    </div>
+
+
+    <div id="cart-items"></div>
+
+
+    <div class="cart-footer">
+
+      <div class="cart-total">
+
+        <span>
+          TOTAL
+        </span>
+
+        <span id="cart-total">
+          0€
+        </span>
+
+      </div>
+
+
+      <a
+        href="carrito.html"
+        class="btn"
+      >
+        VER CARRITO
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- ================= JAVASCRIPT ================= -->
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>

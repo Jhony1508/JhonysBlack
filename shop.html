@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>SHOP — JHONYSBLACK</title>
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+
+</head>
+
+
+<body>
+
+
+  <!-- =====================================================
+       HEADER
+  ====================================================== -->
+
+  <header>
+
+    <a
+      href="index.html"
+      class="logo"
+    >
+      JHONYSBLACK
+    </a>
+
+
+    <nav>
+
+      <a href="index.html">
+        HOME
+      </a>
+
+      <a href="shop.html">
+        SHOP
+      </a>
+
+      <a href="gorras.html">
+        GORRAS
+      </a>
+
+      <a href="ropa.html">
+        ROPA
+      </a>
+
+
+      <!-- ================= DROPDOWN ================= -->
+
+      <div class="dropdown">
+
+        <button
+          class="dropdown-toggle"
+          type="button"
+        >
+          ARTÍCULOS ▾
+        </button>
+
+
+        <div class="dropdown-content">
+
+          <a href="gafas.html">
+            GAFAS
+          </a>
+
+          <a href="llaveros.html">
+            LLAVEROS
+          </a>
+
+          <a href="gorros.html">
+            GORROS
+          </a>
+
+          <a href="shop.html">
+            TODOS
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <a href="registro.html">
+        REGISTRO
+      </a>
+
+      <a href="login.html">
+        LOGIN
+      </a>
+
+
+      <!-- ================= CARRITO ================= -->
+
+      <button
+        class="cart-icon"
+        type="button"
+        onclick="toggleCart()"
+        aria-label="Abrir carrito"
+      >
+
+        🛒
+
+        <span class="cart-count">
+          0
+        </span>
+
+      </button>
+
+    </nav>
+
+  </header>
+
+
+
+  <!-- =====================================================
+       CABECERA
+  ====================================================== -->
+
+  <section class="page-header">
+
+    <div>
+
+      <span class="section-label">
+        JHONYSBLACK
+      </span>
+
+
+      <h1>
+        SHOP
+      </h1>
+
+
+      <p>
+        ALL BLACK. ALL JHONYSBLACK.
+      </p>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       PRODUCTOS
+  ====================================================== -->
+
+  <main class="products-section">
+
+
+    <!-- ================= CABECERA PRODUCTOS ================= -->
+
+    <div class="products-header">
+
+      <div>
+
+        <span class="section-label">
+          COLLECTION
+        </span>
+
+
+        <h2>
+          TODOS LOS PRODUCTOS
+        </h2>
+
+
+        <p>
+          DESCUBRE NUESTRA SELECCIÓN
+        </p>
+
+      </div>
+
+
+      <div class="product-counter">
+
+        <span id="visible-products">
+          21
+        </span>
+
+        PRODUCTOS
+
+      </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         FILTROS
+    ====================================================== -->
+
+    <div
+      class="category-filter"
+      role="tablist"
+    >
+
+      <button
+        class="active"
+        type="button"
+        data-filter="todos"
+      >
+        TODOS
+      </button>
+
+
+      <button
+        type="button"
+        data-filter="gorras"
+      >
+        GORRAS
+      </button>
+
+
+      <button
+        type="button"
+        data-filter="ropa"
+      >
+        ROPA
+      </button>
+
+
+      <button
+        type="button"
+        data-filter="gafas"
+      >
+        GAFAS
+      </button>
+
+
+      <button
+        type="button"
+        data-filter="llaveros"
+      >
+        LLAVEROS
+      </button>
+
+
+      <button
+        type="button"
+        data-filter="gorros"
+      >
+        GORROS
+      </button>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         GRID DE PRODUCTOS
+    ====================================================== -->
+
+    <div
+      class="product-grid"
+      id="product-grid"
+    >
+
+
+
+      <!-- =================================================
+           GORRAS
+      ================================================= -->
+
+
+      <!-- GORRA 1 -->
+
+      <article
+        class="product-card"
+        data-category="gorras"
+      >
+
+        <div class="product-image">
+
+          <img
+            src="IMG_9160.jpg"
+            alt="Gorra Classic Edition"
+          >
+
+        </div>
+
+
+        <div class="product-info">
+
+          <div class="product-category">
+            Gorras
+          </div>
+
+
+          <h3>
+            GORRA CLASSIC EDITION
+          </h3>
+
+
+          <div class="product-price">
+            35,00€
+          </div>
+
+
+          <button
+            class="product-add"
+            type="button"
+            onclick="addToCart(
+              'GORRA CLASSIC EDITION',
+              35,
+              'IMG_9160.jpg'
+            )"
+          >
+            AÑADIR AL CARRITO
+          </button>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- GORRA 2 -->
+
+      <article
+        class="product-card"
+        data-category="gorras"
+      >
+
+        <div class="product-image">
+
+          <img
+            src="Photoroom_20240403_164811.jpeg"
+            alt="Gorra Black Logo"
+          >
+
+        </div>
+
+
+        <div class="product-info">
+
+          <div class="product-category">
+            Gorras
+          </div>
+
+
+          <h3>
+            GORRA BLACK LOGO
+          </h3>
+
+
+          <div class="product-price">
+            30,00€
+          </div>
+
+
+          <button
+            class="product-add"
+            type="button"
+            onclick="addToCart(
+              'GORRA BLACK LOGO',
+              30,
+              'Photoroom_20240403_164811.jpeg'
+            )"
+          >
+            AÑADIR AL CARRITO
+          </button>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- GORRA 3 -->
+
+      <article
+        class="product-card"
+        data-category="gorras"
+      >
+
+        <div class="product-image">
+
+          <img
+            src="Photoroom_20240403_164910.jpeg"
+            alt="Gorra Signature"
+          >
+
+        </div>
+
+
+        <div class="product-info">
+
+          <div class="product-category">
+            Gorras
+          </div>
+
+
+          <h3>
+            GORRA SIGNATURE
+          </h3>
+
+
+          <div class="product-price">
+            25,00€
+          </div>
+
+
+          <button
+            class="product-add"
+            type="button"
+            onclick="addToCart(
+              'GORRA SIGNATURE',
+              25,
+              'Photoroom_20240403_164910.jpeg'
+            )"
+          >
+            AÑADIR AL CARRITO
+          </button>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- =================================================
+           ROPA
+      ================================================= -->
+
+
+      <!-- ROPA 1 -->
+
+      <article
+        class="product-card"
+        data-category="ropa"
+      >
+
+        <div class="product-image">
+
+          <img
+            src="IMG_7834.jpeg"
+            alt="Black Essential"
+          >
+
+        </div>
+
+
+        <div class="product-info">
+
+          <div class="product-category">
+            Ropa
+          </div>
+
+
+          <h3>
+            BLACK ESSENTIAL
+          </h3>
+
+
+          <div class="product-price">
+            45,00€
+          </div>
+
+
+          <button
+            class="product-add"
+            type="button"
+            onclick="addToCart(
+              'BLACK ESSENTIAL',
+              45,
+              'IMG_7834.jpeg'
+            )"
+          >
+            AÑADIR AL CARRITO
+          </button>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- ROPA 2 -->
+
+      <article
+        class="product-card"
+        data-category="ropa"
+      >
+
+        <div class="product-image">
+
+          <img
+            src="Photoroom_20241209_020439.jpeg"
+            alt="Black Street"
+          >
+
+        </div>
+
+
+        <div class="product-info">
+
+          <div class="product-category">
+            Ropa
+          </div>
+
+
+          <h3>
+            BLACK STREET
+          </h3>
+
+
+          <div class="product-price">
+            50,00€
+          </div>
+
+
+          <button
+            class="product-add"
+            type="button"
+            onclick="addToCart(
+              'BLACK STREET',
+              50,
+              'Photoroom_20241209_020439.jpeg'
+            )"
+          >
+            AÑADIR AL CARRITO
+          </button>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- ROPA 3 -->
+
+      <article
+        class="product-card"
+        data-category="ropa"
+      >
+
+        <div class="product-image">
+
+          <img
+            src="Photoroom_20241209_020349.jpeg"
+            alt="Black Signature"
+          >
+
+        </div>
+
+
+        <div class="product-info">
+
+          <div class="product-category">
+            Ropa
+          </div>
+
+
+          <h3>
+            BLACK SIGNATURE
+          </h3>
+
+
+          <div class="product-price">
+            55,00€
+          </div>
+
+
+          <button
+            class="product-add"
+            type="button"
+            onclick="addToCart(
+              'BLACK SIGNATURE',
+              55,
+              'Photoroom_20241209_020349.jpeg'
+            )"
+          >
+            AÑADIR AL CARRITO
+          </button>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- ROPA 4 -->
+
+      <article
+        class="product-card"
+        data-category="ropa"
+      >
+
+        <div class="product-image">
+
+          <img
+            src="IMG_0706.jpeg"
+            alt="Black Collection"
+          >
+
+        </div>
+
+
+        <div class="product-info">
+
+          <div class="product-category">
+            Ropa
+          </div>
+
+
+          <h3>
+            BLACK COLLECTION
+          </h3>
+
+
+          <div class="product-price">
+            60,00€
+          </div>
+
+
+          <button
+            class="product-add"
+            type="button"
+            onclick="addToCart(
+              'BLACK COLLECTION',
+              60,
+              'IMG_0706.jpeg'
+            )"
+          >
+            AÑADIR AL CARRITO
+          </button>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- ROPA 5 -->
+
+      <article
+        class="product-card"
+        data-category="ropa"
+      >
+
+        <div class="product-image">
+
+          <img
+            src="IMG_8955.jpeg"
+            alt="Black Edition"
+          >
+
+        </div>
+
+
+        <div class="product-info">
+
+          <div class="product-category">
+            Ropa
+          </div>
+
+
+          <h3>
+            BLACK EDITION
+          </h3>
+
+
+          <div class="product-price">
+            55,00€
+          </div>
+
+
+          <button
+            class="product-add"
+            type="button"
+            onclick="addToCart(
+              'BLACK EDITION',
+              55,
+              'IMG_8955.jpeg'
+            )"
+          >
+            AÑADIR AL CARRITO
+          </button>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- ROPA 6 -->
+
+      <article
+        class="product-card"
+        data-category="ropa"
+      >
+
+        <div class="product-image">
+
+          <img
+            src="IMG_9198.jpeg"
+            alt="Urban Black"
+          >
+
+        </div>
+
+
+        <div class="product-info">
+
+          <div class="product-category">
+            Ropa
+          </div>
+
+
+          <h3>
+            URBAN BLACK
+          </h3>
+
+
+          <div class="product-price">
+            50,00€
+          </div>
+
+
+          <button
+            class="product-add"
+            type="button"
+            onclick="addToCart(
+              'URBAN BLACK',
+              50,
+              'IMG_9198.jpeg'
+            )"
+          >
+            AÑADIR AL CARRITO
+          </button>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- =================================================
+           GAFAS
+      ================================================= -->
+
+
+      <!-- GAFAS 1 -->
+
+      <article
+        class="product-card"
+        data-category="gafas"
+      >
+
+        <div class="product-image">
+
+          <img
+            src="IMG_1734.png"
+            alt="Gafas Black One"
+          >
+
+        </div>
+
+
+        <div class="product-info">
+
+          <div class="product-category">
+            Gafas
+          </div>
+
+
+          <h3>
+            GAFAS BLACK ONE
+          </h3>
+
+
+          <div class="product-price">
+            30,00€
+          </div>
+
+
+          <button
+            class="product-add"
+            type="button"
+            onclick="addToCart(
+              'GAFAS BLACK ONE',
+              30,
+              'IMG_1734.png'
+            )"
+          >
+            AÑADIR AL CARRITO
+          </button>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- GAFAS 2 -->
+
+      <article
+        class="product-card"
+        data-category="gafas"
+      >
+
+        <div class="product-image">
+
+          <img
+            src="IMG_1735.jpeg"
+            alt="Gafas Shadow"
+          >
+
+        </div>
+
+
+        <div class="product-info">
+
+          <div class="product-category">
+            Gafas
+          </div>
+
+
+          <h3>
+            GAFAS SHADOW
+          </h3>
+
+
+          <div class="product-price">
+            35,00€
+          </div>
+
+
+          <button
+            class="product-add"
+            type="button"
+            onclick="addToCart(
+              'GAFAS SHADOW',
+              35,
+              'IMG_1735.jpeg'
+            )"
+          >
+            AÑADIR AL CARRITO
+          </button>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- GAFAS 3 -->
+
+      <article
+        class="product-card"
+        data-category="gafas"
+      >
+
+        <div class="product-image">
+
+          <img
+            src="P01170850_b1.jpg.avif"
+            alt="Gafas Noir"
+          >
+
+        </div>
+
+
+        <div class="product-info">
+
+          <div class="product-category">
+            Gafas
+          </div>
+
+
+          <h3>
+            GAFAS NOIR
+          </h3>
+
+
+          <div class="product-price">
+            35,00€
+          </div>
+
+
+          <button
+            class="product-add"
+            type="button"
+            onclick="addToCart(
+              'GAFAS NOIR',
+              35,
+              'P01170850_b1.jpg.avif'
+            )"
+          >
+            AÑADIR AL CARRITO
+          </button>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- GAFAS 4 -->
+
+      <article
+        class="product-card"
+        data-category="gafas"
+      >
+
+        <div class="product-image">
+
+          <img
+            src="92044-TS-00_02model2.jpg"
+            alt="Gafas Black Frame"
+          >
+
+        </div>
+
+
+        <div class="product-info">
+
+          <div class="product-category">
+            Gafas
+          </div>
+
+
+          <h3>
+            GAFAS BLACK FRAME
+          </h3>
+
+
+          <div class="product-price">
+            40,00€
+          </div>
+
+
+          <button
+            class="product-add"
+            type="button"
+            onclick="addToCart(
+              'GAFAS BLACK FRAME',
+              40,
+              '92044-TS-00_02model2.jpg'
+            )"
+          >
+            AÑADIR AL CARRITO
+          </button>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- =================================================
+           LLAVEROS
+      ================================================= -->
+
+
+      <!-- LLAVERO 1 -->
+
+      <article
+        class="product-card"
+        data-category="llaveros"
+      >
+
+        <div class="product-image">
+
+          <img
+            src="IMG_9158.jpeg"
+            alt="Keychain Classic"
+          >
+
+        </div>
+
+
+        <div class="product-info">
+
+          <div class="product-category">
+            Llaveros
+          </div>
+
+
+          <h3>
+            KEYCHAIN CLASSIC
+          </h3>
+
+
+          <div class="product-price">
+            15,00€
+          </div>
+
+
+          <button
+            class="product-add"
+            type="button"
+            onclick="addToCart(
+              'KEYCHAIN CLASSIC',
+              15,
+              'IMG_9158.jpeg'
+            )"
+          >
+            AÑADIR AL CARRITO
+          </button>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- LLAVERO 2 -->
+
+      <article
+        class="product-card"
+        data-category="llaveros"
+      >
+
+        <div class="product-image">
+
+          <img
+            src="16468-1039-1.jpg"
+            alt="Keychain Logo"
+          >
+
+        </div>
+
+
+        <div class="product-info">
+
+          <div class="product-category">
+            Llaveros
+          </div>
+
+
+          <h3>
+            KEYCHAIN LOGO
+          </h3>
+
+
+          <div class="product-price">
+            15,00€
+          </div>
+
+
+          <button
+            class="product-add"
+            type="button"
+            onclick="addToCart(
+              'KEYCHAIN LOGO',
+              15,
+              '16468-1039-1.jpg'
+            )"
+          >
+            AÑADIR AL CARRITO
+          </button>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- LLAVERO 3 -->
+
+      <article
+        class="product-card"
+        data-category="llaveros"
+      >
+
+        <div class="product-image">
+
+          <img
+            src="images-2.jpeg"
+            alt="Keychain Black"
+          >
+
+        </div>
+
+
+        <div class="product-info">
+
+          <div class="product-category">
+            Llaveros
+          </div>
+
+
+          <h3>
+            KEYCHAIN BLACK
+          </h3>
+
+
+          <div class="product-price">
+            18,00€
+          </div>
+
+
+          <button
+            class="product-add"
+            type="button"
+            onclick="addToCart(
+              'KEYCHAIN BLACK',
+              18,
+              'images-2.jpeg'
+            )"
+          >
+            AÑADIR AL CARRITO
+          </button>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- LLAVERO 4 -->
+
+      <article
+        class="product-card"
+        data-category="llaveros"
+      >
+
+        <div class="product-image">
+
+          <img
+            src="images.jpeg"
+            alt="Keychain Signature"
+          >
+
+        </div>
+
+
+        <div class="product-info">
+
+          <div class="product-category">
+            Llaveros
+          </div>
+
+
+          <h3>
+            KEYCHAIN SIGNATURE
+          </h3>
+
+
+          <div class="product-price">
+            20,00€
+          </div>
+
+
+          <button
+            class="product-add"
+            type="button"
+            onclick="addToCart(
+              'KEYCHAIN SIGNATURE',
+              20,
+              'images.jpeg'
+            )"
+          >
+            AÑADIR AL CARRITO
+          </button>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- =================================================
+           GORROS
+      ================================================= -->
+
+
+      <!-- GORRO 1 -->
+
+      <article
+        class="product-card"
+        data-category="gorros"
+      >
+
+        <div class="product-image">
+
+          <img
+            src="IMG_9159.jpeg"
+            alt="Gorro Black Edition"
+          >
+
+        </div>
+
+
+        <div class="product-info">
+
+          <div class="product-category">
+            Gorros
+          </div>
+
+
+          <h3>
+            GORRO BLACK EDITION
+          </h3>
+
+
+          <div class="product-price">
+            25,00€
+          </div>
+
+
+          <button
+            class="product-add"
+            type="button"
+            onclick="addToCart(
+              'GORRO BLACK EDITION',
+              25,
+              'IMG_9159.jpeg'
+            )"
+          >
+            AÑADIR AL CARRITO
+          </button>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- GORRO 2 -->
+
+      <article
+        class="product-card"
+        data-category="gorros"
+      >
+
+        <div class="product-image">
+
+          <img
+            src="484094_mediumbig.jpg"
+            alt="Gorro Classic"
+          >
+
+        </div>
+
+
+        <div class="product-info">
+
+          <div class="product-category">
+            Gorros
+          </div>
+
+
+          <h3>
+            GORRO CLASSIC
+          </h3>
+
+
+          <div class="product-price">
+            25,00€
+          </div>
+
+
+          <button
+            class="product-add"
+            type="button"
+            onclick="addToCart(
+              'GORRO CLASSIC',
+              25,
+              '484094_mediumbig.jpg'
+            )"
+          >
+            AÑADIR AL CARRITO
+          </button>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- GORRO 3 -->
+
+      <article
+        class="product-card"
+        data-category="gorros"
+      >
+
+        <div class="product-image">
+
+          <img
+            src="99ca5bef762d65f3031dc124361baf6d13cfb537_xxl-1.jpg.avif"
+            alt="Gorro Signature"
+          >
+
+        </div>
+
+
+        <div class="product-info">
+
+          <div class="product-category">
+            Gorros
+          </div>
+
+
+          <h3>
+            GORRO SIGNATURE
+          </h3>
+
+
+          <div class="product-price">
+            30,00€
+          </div>
+
+
+          <button
+            class="product-add"
+            type="button"
+            onclick="addToCart(
+              'GORRO SIGNATURE',
+              30,
+              '99ca5bef762d65f3031dc124361baf6d13cfb537_xxl-1.jpg.avif'
+            )"
+          >
+            AÑADIR AL CARRITO
+          </button>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- GORRO 4 -->
+
+      <article
+        class="product-card"
+        data-category="gorros"
+      >
+
+        <div class="product-image">
+
+          <img
+            src="tom_tailor104336332620_1.jpg.avif"
+            alt="Gorro Noir"
+          >
+
+        </div>
+
+
+        <div class="product-info">
+
+          <div class="product-category">
+            Gorros
+          </div>
+
+
+          <h3>
+            GORRO NOIR
+          </h3>
+
+
+          <div class="product-price">
+            30,00€
+          </div>
+
+
+          <button
+            class="product-add"
+            type="button"
+            onclick="addToCart(
+              'GORRO NOIR',
+              30,
+              'tom_tailor104336332620_1.jpg.avif'
+            )"
+          >
+            AÑADIR AL CARRITO
+          </button>
+
+        </div>
+
+      </article>
+
+
+    </div>
+
+
+
+    <!-- =====================================================
+         SIN PRODUCTOS
+    ====================================================== -->
+
+    <div
+      id="no-products"
+      class="no-products"
+      style="display: none;"
+    >
+
+      <h3>
+        NO HAY PRODUCTOS
+      </h3>
+
+
+      <p>
+        Todavía no hay productos en esta categoría.
+      </p>
+
+    </div>
+
+  </main>
+
+
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+
+  <footer>
+
+    © 2026 JHONYSBLACK — ALL BLACK EVERYTHING
+
+  </footer>
+
+
+
+  <!-- =====================================================
+       CARRITO LATERAL
+  ====================================================== -->
+
+  <aside
+    class="cart-panel"
+    id="cartPanel"
+  >
+
+
+    <div class="cart-header">
+
+      <h2>
+        MI CARRITO
+      </h2>
+
+
+      <button
+        class="cart-close"
+        type="button"
+        onclick="toggleCart()"
+        aria-label="Cerrar carrito"
+      >
+        ×
+      </button>
+
+    </div>
+
+
+    <div id="cart-items"></div>
+
+
+    <div class="cart-footer">
+
+      <div class="cart-total">
+
+        <span>
+          TOTAL
+        </span>
+
+
+        <span id="cart-total">
+          0,00€
+        </span>
+
+      </div>
+
+
+      <a
+        href="carrito.html"
+        class="btn"
+      >
+        VER CARRITO
+      </a>
+
+    </div>
+
+  </aside>
+
+
+
+  <!-- =====================================================
+       JAVASCRIPT
+  ====================================================== -->
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>

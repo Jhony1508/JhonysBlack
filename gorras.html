@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>GORRAS — JHONYSBLACK</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+
+  <header>
+
+    <a href="index.html" class="logo">
+      JHONYSBLACK
+    </a>
+
+    <nav>
+
+      <a href="index.html">HOME</a>
+
+      <a href="shop.html">SHOP</a>
+
+      <a href="gorras.html">GORRAS</a>
+
+      <a href="ropa.html">ROPA</a>
+
+      <div class="dropdown">
+
+  <button class="dropdown-toggle" type="button">
+    ARTÍCULOS ▾
+  </button>
+
+  <div class="dropdown-content">
+
+    <a href="gafas.html">GAFAS</a>
+    <a href="llaveros.html">LLAVEROS</a>
+    <a href="gorros.html">GORROS</a>
+    <a href="shop.html">TODOS</a>
+
+  </div>
+
+</div>
+
+
+      <a href="registro.html">REGISTRO</a>
+
+      <a href="login.html">LOGIN</a>
+
+      <div class="cart-icon" onclick="toggleCart()">
+
+        🛒
+
+        <span class="cart-count">0</span>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+
+  <!-- ================= CABECERA ================= -->
+
+  <section class="page-header">
+
+    <div>
+
+      <h1>GORRAS</h1>
+
+      <p>
+        JHONYSBLACK CAPS COLLECTION
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= PRODUCTOS ================= -->
+
+  <main class="products-section">
+
+    <div class="products-header">
+
+      <div>
+
+        <h2>CAPS</h2>
+
+        <p>
+          DISEÑO • ACTITUD • IDENTIDAD
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="product-grid">
+
+
+      <!-- ================= GORRA 1 ================= -->
+
+      <article class="product-card">
+
+        <div class="product-image">
+
+          <img
+            src="IMG_9160.jpg"
+            alt="Gorra JHONYSBLACK Classic Edition"
+          >
+
+        </div>
+
+        <div class="product-info">
+
+          <div class="product-category">
+            Gorras
+          </div>
+
+          <h3>
+            GORRA CLASSIC EDITION
+          </h3>
+
+          <div class="product-price">
+            35.00€
+          </div>
+
+          <button
+            class="product-add"
+            onclick="addToCart('GORRA CLASSIC EDITION', 35, 'IMG_9160.jpg')"
+
+          >
+            AÑADIR AL CARRITO
+          </button>
+
+        </div>
+
+      </article>
+
+
+      <!-- ================= GORRA 2 ================= -->
+
+      <article class="product-card">
+
+        <div class="product-image">
+
+          <img
+            src="Photoroom_20240403_164811.jpeg"
+            alt="Gorra JHONYSBLACK Black Logo"
+          >
+
+        </div>
+
+        <div class="product-info">
+
+          <div class="product-category">
+            Gorras
+          </div>
+
+          <h3>
+            GORRA BLACK LOGO
+          </h3>
+
+          <div class="product-price">
+            35.00€
+          </div>
+
+          <button
+            class="product-add"
+            onclick="addToCart('GORRA BLACK LOGO', 35, 'Photoroom_20240403_164811.jpeg')"
+
+          >
+            AÑADIR AL CARRITO
+          </button>
+
+        </div>
+
+      </article>
+
+
+      <!-- ================= GORRA 3 ================= -->
+
+      <article class="product-card">
+
+        <div class="product-image">
+
+          <img
+            src="Photoroom_20240403_164910.jpeg"
+            alt="Gorra JHONYSBLACK Signature"
+          >
+
+        </div>
+
+        <div class="product-info">
+
+          <div class="product-category">
+            Gorras
+          </div>
+
+          <h3>
+            GORRA SIGNATURE
+          </h3>
+
+          <div class="product-price">
+            35.00€
+          </div>
+
+          <button
+            class="product-add"
+            onclick="addToCart('GORRA SIGNATURE', 35, 'Photoroom_20240403_164910.jpeg')"
+
+          >
+            AÑADIR AL CARRITO
+          </button>
+
+        </div>
+
+      </article>
+
+
+      <!-- ================= GORRA 4 ================= -->
+
+      <article class="product-card">
+
+        <div class="product-image">
+
+          <img
+            src="IMG_9262.jpg"
+            alt="Gorra JHONYSBLACK Black Essential"
+          >
+
+        </div>
+
+        <div class="product-info">
+
+          <div class="product-category">
+            Gorras
+          </div>
+
+          <h3>
+            GORRA BLACK ESSENTIAL
+          </h3>
+
+          <div class="product-price">
+            40.00€
+          </div>
+
+          <button
+            class="product-add"
+            onclick="addToCart('GORRA BLACK ESSENTIAL', 40, 'IMG_9262.jpg')"
+
+          >
+            AÑADIR AL CARRITO
+          </button>
+
+        </div>
+
+      </article>
+
+
+    </div>
+
+  </main>
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer>
+
+    © 2026 JHONYSBLACK — ALL BLACK EVERYTHING
+
+  </footer>
+
+
+  <!-- ================= CARRITO ================= -->
+
+  <div class="cart-panel" id="cartPanel">
+
+    <div class="cart-header">
+
+      <h2>MI CARRITO</h2>
+
+      <button
+        class="cart-close"
+        onclick="toggleCart()"
+      >
+        ×
+      </button>
+
+    </div>
+
+    <div id="cart-items"></div>
+
+    <div class="cart-footer">
+
+      <div class="cart-total">
+
+        <span>TOTAL</span>
+
+        <span id="cart-total">
+          0€
+        </span>
+
+      </div>
+
+      <a href="carrito.html" class="btn">
+        VER CARRITO
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>

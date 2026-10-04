@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>LLAVEROS — JHONYSBLACK</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+
+  <header>
+
+    <a href="index.html" class="logo">
+      JHONYSBLACK
+    </a>
+
+    <nav>
+
+      <a href="index.html">
+        HOME
+      </a>
+
+      <a href="shop.html">
+        SHOP
+      </a>
+
+      <a href="gorras.html">
+        GORRAS
+      </a>
+
+      <a href="ropa.html">
+        ROPA
+      </a>
+
+
+      <!-- ================= ARTÍCULOS ================= -->
+
+      <div class="dropdown">
+
+        <button
+          class="dropdown-toggle"
+          type="button"
+        >
+          ARTÍCULOS ▾
+        </button>
+
+        <div class="dropdown-content">
+
+          <a href="gafas.html">
+            GAFAS
+          </a>
+
+          <a href="llaveros.html">
+            LLAVEROS
+          </a>
+
+          <a href="gorros.html">
+            GORROS
+          </a>
+
+          <a href="shop.html">
+            TODOS
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <a href="registro.html">
+        REGISTRO
+      </a>
+
+      <a href="login.html">
+        LOGIN
+      </a>
+
+
+      <!-- ================= CARRITO ================= -->
+
+      <div
+        class="cart-icon"
+        onclick="toggleCart()"
+        role="button"
+        tabindex="0"
+        aria-label="Abrir carrito"
+      >
+
+        🛒
+
+        <span class="cart-count">
+          0
+        </span>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+
+  <!-- ================= CABECERA ================= -->
+
+  <section class="page-header">
+
+    <div>
+
+      <h1>
+        LLAVEROS
+      </h1>
+
+      <p>
+        JHONYSBLACK KEYCHAIN COLLECTION
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= PRODUCTOS ================= -->
+
+  <main class="products-section">
+
+    <div class="products-header">
+
+      <div>
+
+        <h2>
+          KEYCHAINS
+        </h2>
+
+        <p>
+          SMALL DETAILS • BIG ATTITUDE
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="product-grid">
+
+
+      <!-- =================================================
+           LLAVERO 1
+           KEYCHAIN CLASSIC
+           ================================================= -->
+
+      <article class="product-card">
+
+        <div class="product-image">
+
+          <img
+            src="IMG_9158.jpeg"
+            alt="Llavero JHONYSBLACK Classic"
+          >
+
+        </div>
+
+        <div class="product-info">
+
+          <div class="product-category">
+            Llaveros
+          </div>
+
+          <h3>
+            KEYCHAIN CLASSIC
+          </h3>
+
+          <div class="product-price">
+            15.00€
+          </div>
+
+          <button
+            type="button"
+            class="product-add"
+            onclick="addToCart('KEYCHAIN CLASSIC', 15, 'IMG_9158.jpeg')"
+          >
+            AÑADIR AL CARRITO
+          </button>
+
+        </div>
+
+      </article>
+
+
+      <!-- =================================================
+           LLAVERO 2
+           KEYCHAIN LOGO
+           ================================================= -->
+
+      <article class="product-card">
+
+        <div class="product-image">
+
+          <img
+            src="16468-1039-1.jpg"
+            alt="Llavero JHONYSBLACK Logo"
+          >
+
+        </div>
+
+        <div class="product-info">
+
+          <div class="product-category">
+            Llaveros
+          </div>
+
+          <h3>
+            KEYCHAIN LOGO
+          </h3>
+
+          <div class="product-price">
+            15.00€
+          </div>
+
+          <button
+            type="button"
+            class="product-add"
+            onclick="addToCart('KEYCHAIN LOGO', 15, '16468-1039-1.jpg')"
+          >
+            AÑADIR AL CARRITO
+          </button>
+
+        </div>
+
+      </article>
+
+
+      <!-- =================================================
+           LLAVERO 3
+           KEYCHAIN BLACK
+           ================================================= -->
+
+      <article class="product-card">
+
+        <div class="product-image">
+
+          <img
+            src="images-2.jpeg"
+            alt="Llavero JHONYSBLACK Black"
+          >
+
+        </div>
+
+        <div class="product-info">
+
+          <div class="product-category">
+            Llaveros
+          </div>
+
+          <h3>
+            KEYCHAIN BLACK
+          </h3>
+
+          <div class="product-price">
+            18.00€
+          </div>
+
+          <button
+            type="button"
+            class="product-add"
+            onclick="addToCart('KEYCHAIN BLACK', 18, 'images-2.jpeg')"
+          >
+            AÑADIR AL CARRITO
+          </button>
+
+        </div>
+
+      </article>
+
+
+      <!-- =================================================
+           LLAVERO 4
+           KEYCHAIN SIGNATURE
+           ================================================= -->
+
+      <article class="product-card">
+
+        <div class="product-image">
+
+          <img
+            src="images.jpeg"
+            alt="Llavero JHONYSBLACK Signature"
+          >
+
+        </div>
+
+        <div class="product-info">
+
+          <div class="product-category">
+            Llaveros
+          </div>
+
+          <h3>
+            KEYCHAIN SIGNATURE
+          </h3>
+
+          <div class="product-price">
+            20.00€
+          </div>
+
+          <button
+            type="button"
+            class="product-add"
+            onclick="addToCart('KEYCHAIN SIGNATURE', 20, 'images.jpeg')"
+          >
+            AÑADIR AL CARRITO
+          </button>
+
+        </div>
+
+      </article>
+
+
+    </div>
+
+  </main>
+
+
+  <!-- ================= FOOTER ================= -->
+
+  <footer>
+
+    © 2026 JHONYSBLACK — ALL BLACK EVERYTHING
+
+  </footer>
+
+
+  <!-- =================================================
+       CARRITO LATERAL
+       ================================================= -->
+
+  <div
+    class="cart-panel"
+    id="cartPanel"
+  >
+
+    <div class="cart-header">
+
+      <h2>
+        MI CARRITO
+      </h2>
+
+      <button
+        type="button"
+        class="cart-close"
+        onclick="toggleCart()"
+        aria-label="Cerrar carrito"
+      >
+        ×
+      </button>
+
+    </div>
+
+
+    <div id="cart-items"></div>
+
+
+    <div class="cart-footer">
+
+      <div class="cart-total">
+
+        <span>
+          TOTAL
+        </span>
+
+        <span id="cart-total">
+          0€
+        </span>
+
+      </div>
+
+
+      <a
+        href="carrito.html"
+        class="btn"
+      >
+        VER CARRITO
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- ================= JAVASCRIPT ================= -->
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>

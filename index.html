@@ -1,0 +1,246 @@
+<!doctype html> <html lang="es"> <head> <meta charset="UTF-8"> <title>JHONYSBLACK</title>
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0"
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet" > <style> * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Inter", sans-serif; } body { background: #000; color: #fff; overflow-x: hidden; } a { text-decoration: none; color: inherit; } /* ===================================================== HEADER ===================================================== */ header { position: fixed; top: 0; left: 0; width: 100%; padding: 20px 60px; display: flex; justify-content: space-between; align-items: center; z-index: 1000; background: rgba(0, 0, 0, 0.75); backdrop-filter: blur(10px); } header h1 { font-size: 20px; letter-spacing: 3px; font-weight: 600; } nav { display: flex; align-items: center; gap: 20px; } nav > a { font-size: 14px; opacity: 0.8; transition: 0.3s; } nav > a:hover { opacity: 1; } /* ===================================================== ARTÍCULOS - DROPDOWN ===================================================== */ .dropdown { position: relative; } .dropdown-button { background: none; border: none; color: #fff; font-family: "Inter", sans-serif; font-size: 14px; opacity: 0.8; cursor: pointer; padding: 0; transition: 0.3s; } .dropdown-button:hover { opacity: 1; } .dropdown-content { display: none; position: absolute; top: 30px; left: 0; min-width: 170px; background: #111; border: 1px solid #222; z-index: 9999; } .dropdown-content a { display: block; width: 100%; padding: 14px 16px; color: #fff; font-size: 12px; border-bottom: 1px solid #222; transition: 0.3s; } .dropdown-content a:last-child { border-bottom: none; } .dropdown-content a:hover { background: #222; } .dropdown.open .dropdown-content { display: block; } /* ===================================================== CARRITO ===================================================== */ .cart-icon { display: flex; align-items: center; position: relative; font-size: 16px; cursor: pointer; } .cart-count { position: absolute; top: -8px; right: -10px; background: #fff; color: #000; font-size: 10px; padding: 2px 6px; border-radius: 50%; } /* ===================================================== PANEL CARRITO ===================================================== */ .cart-panel { position: fixed; top: 0; right: -400px; width: 350px; height: 100%; background: #111; border-left: 1px solid #222; padding: 30px; transition: right 0.4s; z-index: 2000; } .cart-panel.active { right: 0; } .cart-panel h2 { margin-bottom: 20px; letter-spacing: 3px; } .cart-item { display: flex; justify-content: space-between; margin-bottom: 15px; border-bottom: 1px solid #222; padding-bottom: 10px; font-size: 14px; } .cart-footer { margin-top: 30px; } .cart-footer button { width: 100%; padding: 12px; background: #fff; color: #000; border: none; cursor: pointer; margin-top: 10px; } /* ===================================================== HERO ===================================================== */ .hero { position: relative; min-height: 100vh; overflow: hidden; background: #000; } /* ===================================================== VÍDEO HERO - MENOS ZOOM ===================================================== */ .hero-video { position: absolute; top: 50%; left: 50%; width: 100%; height: 100%; transform: translate(-50%, -50%); /* * Antes estaba en "cover", lo que hacía * que el vídeo se acercara y recortara. * * "contain" muestra el vídeo completo. */ object-fit: contain; background: #000; } .hero-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient( to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.75) ); } .hero-content { position: relative; z-index: 2; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 20px; } .hero-content h2 { font-size: 64px; font-weight: 800; letter-spacing: 6px; margin-bottom: 20px; } .hero-content p { font-size: 14px; opacity: 0.7; margin-bottom: 40px; letter-spacing: 2px; } /* ===================================================== BOTONES ===================================================== */ .btn { background: #fff; color: #000; padding: 15px 40px; font-size: 12px; letter-spacing: 2px; border: 1px solid transparent; transition: 0.3s; display: inline-block; cursor: pointer; } .btn:hover { background: #000; color: #fff; border: 1px solid #fff; } /* ===================================================== CARRUSEL ===================================================== */ .carousel { margin: 120px 0; overflow: hidden; } .carousel-track { display: flex; gap: 40px; width: max-content; animation: scroll 40s linear infinite; } .carousel img { width: 70vw; max-width: 350px; aspect-ratio: 3 / 4; object-fit: cover; transition: transform 0.4s ease; } .carousel img:hover { transform: scale(1.05); } @keyframes scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } } /* ===================================================== PRODUCTO DESTACADO ===================================================== */ .product { display: flex; flex-wrap: wrap; padding: 100px 60px; gap: 80px; align-items: center; } .product img { width: 380px; max-width: 100%; aspect-ratio: 3 / 4; object-fit: cover; } .product-info h3 { font-size: 36px; margin-bottom: 20px; } .product-info p { font-size: 14px; opacity: 0.7; margin-bottom: 30px; max-width: 400px; } .price { font-size: 20px; margin-bottom: 20px; letter-spacing: 2px; } /* ===================================================== FOOTER ===================================================== */ footer { padding: 60px; border-top: 1px solid #222; text-align: center; font-size: 12px; opacity: 0.6; } /* ===================================================== MENÚ MÓVIL ===================================================== */ @media (max-width: 900px) { header { padding: 15px 20px; flex-direction: column; gap: 15px; } nav { justify-content: center; flex-wrap: wrap; gap: 15px; } nav > a, .dropdown-button { font-size: 12px; } .dropdown { position: relative; } .dropdown-content { position: absolute; top: 30px; left: 50%; transform: translateX(-50%); min-width: 170px; } .hero-content h2 { font-size: 36px; letter-spacing: 3px; } .product { flex-direction: column; padding: 60px 30px; text-align: center; } .product img { width: 100%; max-width: 320px; } } </style> </head> <body> <!-- ===================================================== HEADER ===================================================== --> <header>
+<h1>
+  JHONYSBLACK
+</h1>
+
+<nav>
+
+  <a href="index.html">
+    HOME
+  </a>
+
+  <a href="shop.html">
+    SHOP
+  </a>
+
+  <a href="gorras.html">
+    GORRAS
+  </a>
+
+  <a href="ropa.html">
+    ROPA
+  </a>
+
+
+  <!-- ================= ARTÍCULOS ================= -->
+
+  <div class="dropdown" id="articlesDropdown">
+
+    <button
+      type="button"
+      class="dropdown-button"
+      id="articlesButton"
+    >
+      ARTÍCULOS ▾
+    </button>
+
+    <div class="dropdown-content">
+
+      <a href="gafas.html">
+        GAFAS
+      </a>
+
+      <a href="llaveros.html">
+        LLAVEROS
+      </a>
+
+      <a href="gorros.html">
+        GORROS
+      </a>
+
+      <a href="shop.html">
+        TODOS
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <a href="registro.html">
+    REGISTRO
+  </a>
+
+  <a href="login.html">
+    LOGIN
+  </a>
+
+
+  <!-- ================= CARRITO ================= -->
+
+  <div
+    class="cart-icon"
+    onclick="toggleCart()"
+  >
+
+    🛒
+
+    <span class="cart-count">
+      0
+    </span>
+
+  </div>
+
+</nav>
+
+</header> <!-- ===================================================== PANEL DEL CARRITO ===================================================== --> <div class="cart-panel" id="cartPanel" >
+<h2>
+  TU CARRITO
+</h2>
+
+<div id="cart-items"></div>
+
+<div class="cart-footer">
+
+  <p>
+    Total:
+    <span id="cart-total">
+      0€
+    </span>
+  </p>
+
+  <button onclick="clearCart()">
+    Vaciar carrito
+  </button>
+
+  <button
+    onclick="window.location.href='carrito.html'"
+  >
+    VER CARRITO
+  </button>
+
+</div>
+
+</div> <!-- ===================================================== HERO ===================================================== --> <section class="hero">
+<video
+  class="hero-video"
+  autoplay
+  muted
+  loop
+  playsinline
+>
+
+  <source
+    src="video.mp4"
+    type="video/mp4"
+  >
+
+  Tu navegador no soporta video.
+
+</video>
+
+
+<div class="hero-overlay"></div>
+
+
+<div class="hero-content">
+
+  <h2>
+    THE BLACK STYLE
+  </h2>
+
+  <p>
+    MINIMAL • MODERN • ESSENTIAL
+  </p>
+
+  <a
+    href="shop.html"
+    class="btn"
+  >
+    COMPRAR AHORA
+  </a>
+
+</div>
+
+</section> <!-- ===================================================== CARRUSEL ===================================================== --> <section class="carousel">
+<div class="carousel-track">
+
+  <img
+    src="IMG_1735.jpeg"
+    alt="JHONYSBLACK"
+  >
+
+  <img
+    src="IMG_8954.jpeg"
+    alt="JHONYSBLACK"
+  >
+
+  <img
+    src="IMG_8955.jpeg"
+    alt="JHONYSBLACK"
+  >
+
+  <img
+    src="IMG_9159.jpeg"
+    alt="JHONYSBLACK"
+  >
+
+  <img
+    src="IMG_7834.jpeg"
+    alt="JHONYSBLACK"
+  >
+
+  <img
+    src="IMG_0706.jpeg"
+    alt="JHONYSBLACK"
+  >
+
+  <img
+    src="Photoroom_20241209_001033.jpeg"
+    alt="JHONYSBLACK"
+  >
+
+  <img
+    src="IMG_8955.jpeg"
+    alt="JHONYSBLACK"
+  >
+
+  <img
+    src="IMG_9262.jpg"
+    alt="JHONYSBLACK"
+  >
+
+</div>
+
+</section> <!-- ===================================================== PRODUCTO DESTACADO ===================================================== --> <section class="product">
+<img
+  src="IMG_9160.jpg"
+  alt="GORRA JHONYSBLACK CLASSIC EDITION"
+>
+
+<div class="product-info">
+
+  <h3>
+    GORRA JHONYSBLACK CLASSIC EDITION
+  </h3>
+
+  <p>
+    Diseñada para quienes entienden que
+    el negro no es un color, es una identidad.
+  </p>
+
+  <div class="price">
+    35.00€
+  </div>
+
+  <button
+    class="btn"
+    onclick="addToCart(
+      'GORRA CLASSIC EDITION',
+      35,
+      '502760910_566249426531713_2988430062409539373_n.jpg'
+    )"
+  >
+    AÑADIR AL CARRITO
+  </button>
+
+</div>
+
+</section> <!-- ===================================================== FOOTER ===================================================== --> <footer>
+© 2026 JHONYSBLACK — ALL BLACK EVERYTHING
+
+</footer> <!-- ===================================================== JAVASCRIPT ===================================================== --> <script src="main.js"></script> <script> /* * MENÚ ARTÍCULOS */ const articlesButton = document.getElementById( "articlesButton" ); const articlesDropdown = document.getElementById( "articlesDropdown" ); articlesButton.addEventListener( "click", function(event) { event.stopPropagation(); articlesDropdown.classList.toggle( "open" ); } ); /* * Cerrar menú al hacer clic fuera */ document.addEventListener( "click", function(event) { if ( !articlesDropdown.contains( event.target ) ) { articlesDropdown.classList.remove( "open" ); } } ); /* * Evitar que el menú se cierre * antes de seleccionar una categoría */ const categoryLinks = articlesDropdown.querySelectorAll( ".dropdown-content a" ); categoryLinks.forEach( function(link) { link.addEventListener( "click", function(event) { event.stopPropagation(); } ); } ); </script> </body> </html>
